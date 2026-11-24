@@ -3,6 +3,11 @@
     --secondaryColor: #099078;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     margin: 0;
 }
@@ -12,9 +17,15 @@ body {
     width: 100vw;
 }
 
+header {
+    background-color: var(--primaryColor);
+    font-size: 2rem;
+    height: 7%;
+}
+
 nav {
     height: 5%;
-    background-color: var(--primaryColor);
+    background-color: var(--secondaryColor);
 }
 
 main {
@@ -41,4 +52,20 @@ img {
 #mainArticle {
     height: 100%;
     background-color: var(--primaryColor);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: green;
+    height: 200px;
+    width: 100px;
+    margin: 10px;
+}
+
+.card p {
+    padding: 5px;
 }
